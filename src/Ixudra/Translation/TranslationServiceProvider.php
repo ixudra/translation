@@ -18,7 +18,7 @@ class TranslationServiceProvider extends ServiceProvider {
         $this->app['IxdTranslation'] = $this->app->share(
             function($app)
             {
-                return new TranslationService();
+                return new TranslationService( new LanguageHelper() );
             }
         );
     }
