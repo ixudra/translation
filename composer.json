@@ -1,7 +1,7 @@
 {
     "name": "ixudra/translation",
-    "description": "Custom PHP translation library for the Laravel 4 framework - developed by Ixudra",
-    "version": "1.0.1",
+    "description": "Custom PHP translation library for the Laravel 5 framework - developed by Ixudra",
+    "version": "2.0.0",
     "keywords": ["Ixudra", "Laravel", "Translation"],
     "homepage": "http://ixudra.be",
     "license": "MIT",
@@ -15,8 +15,8 @@
 
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": ">=4.2",
-        "illuminate/translation": ">=4.2"
+        "illuminate/support": "~5.0",
+        "illuminate/translation": "~5.0"
     },
 
     "require-dev": {
@@ -30,5 +30,5 @@
         }
     },
 
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }

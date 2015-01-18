@@ -10,7 +10,7 @@ class TranslationServiceProvider extends ServiceProvider {
 
     public function boot()
     {
-        $this->package('ixudra/translation');
+        $this->loadTranslationsFrom('translation', $this->app->basePath(). '/workbench/ixudra/translation/src/resources/lang');
     }
 
     public function register()

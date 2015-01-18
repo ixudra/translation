@@ -1,7 +1,7 @@
 ixudra/translation
 =====================
 
-Custom PHP translation library for the Laravel 4 framework - developed by Ixudra.
+Custom PHP translation library for the Laravel 5 framework - developed by Ixudra.
 
 This package can be used by anyone at any given time, but keep in mind that it is optimized for my personal custom workflow. It may not suit your project perfectly and modifications may be in order.
 
@@ -25,11 +25,13 @@ Pull this package in through Composer.
 
     {
         "require": {
-            "ixudra/translation": "1.0.*"
+            "ixudra/translation": "2.*"
         }
     }
 
 ```
+
+> If you want to use this package with Laravel 4, change the above line to `"ixudra/translation": "1.*"` instead.
 
 Add the service provider to your app.php file
 

@@ -1,8 +1,6 @@
 <?php namespace Ixudra\Translation;
 
 
-use Illuminate\Support\Facades\Lang;
-
 class TranslationService {
 
     protected $languageHelper;
