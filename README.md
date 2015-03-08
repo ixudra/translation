@@ -25,7 +25,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-            "ixudra/translation": "2.*"
+            "ixudra/translation": "5.*"
         }
     }
 
