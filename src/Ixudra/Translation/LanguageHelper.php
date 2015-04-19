@@ -5,10 +5,14 @@ use Illuminate\Support\Facades\Lang;
 
 class LanguageHelper {
 
-    public function get($message, $attributes = array())
+    public function get($message, $attributes = array(), $package = '')
     {
         if( Lang::has( $message ) ) {
             return Lang::get($message, $attributes);
+        }
+
+        if( $package != '' && Lang::has( $package .'::'. $message ) ) {
+            return Lang::get($package .'::'. $message, $attributes);
         }
 
         if( Lang::has( 'translation::'. $message ) ) {
@@ -18,9 +22,15 @@ class LanguageHelper {
         return $message;
     }
 
-    public function has($message)
+    public function has($message, $package = '')
     {
-        return Lang::has( $message ) || Lang::has( 'translation::'. $message );
+        $found = Lang::has( $message );
+
+        if( $package != '' ) {
+            $found = $found || Lang::has( $package .'::'. $message );
+        }
+
+        return  $found || Lang::has( 'translation::'. $message );
     }
 
 }
