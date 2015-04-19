@@ -12,7 +12,43 @@ class TranslationService {
     }
 
 
-    public function message($message, $package = '')
+    public function message($message)
+    {
+        $components = $this->detectPackage( $message );
+
+        return $this->translateMessage( $components[ 'message' ], $components[ 'package' ] );
+    }
+
+    public function model($message)
+    {
+        $components = $this->detectPackage( $message );
+
+        return $this->translateModel( $components[ 'message' ], $components[ 'package' ] );
+    }
+
+    public function recursive($message, $attributes = array(), $ucFirst = true)
+    {
+        $components = $this->detectPackage( $message );
+
+        return $this->translateRecursive($components[ 'message' ], $components[ 'package' ], $attributes, $ucFirst);
+    }
+
+    protected function detectPackage($message)
+    {
+        $package = '';
+        if( strpos($message, '::') ) {
+            $components = explode('::', $message);
+            $message = $components[ 1 ];
+            $package = $components[ 0 ];
+        }
+
+        return array(
+            'message'           => $message,
+            'package'           => $package
+        );
+    }
+
+    protected function translateMessage($message, $package = '')
     {
         $pos = strpos( $message, '.' );
         $model = substr( $message, 0, $pos );
@@ -24,7 +60,7 @@ class TranslationService {
         return $this->languageHelper->get( $message, $package );
     }
 
-    public function model($message, $package = '')
+    public function translateModel($message, $package = '')
     {
         $pos = strpos( $message, '.' );
         $model = substr( $message, 0, $pos );
@@ -37,7 +73,7 @@ class TranslationService {
         );
     }
 
-    public function recursive($message, $attributes = array(), $package = '', $ucFirst = true)
+    public function translateRecursive($message, $package = '', $attributes = array(), $ucFirst = true)
     {
         if( !$this->languageHelper->has( $message, $package ) ) {
             return $message;
