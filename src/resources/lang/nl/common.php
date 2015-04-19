@@ -10,6 +10,13 @@
         'clear'                 => 'leegmaken',
 
         'actions'               => 'acties',
-        'na'                    => 'niet van toepassing'
+        'none'                  => 'geen',
+        'na'                    => 'niet van toepassing',
+
+        'both'                  => 'beide',
+        'yes'                   => 'ja',
+        'no'                    => 'nee',
+
+        'query'                 => 'zoeken'
 
     );

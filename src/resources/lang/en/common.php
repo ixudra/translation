@@ -10,6 +10,13 @@
         'clear'                 => 'clear',
 
         'actions'               => 'actions',
-        'na'                    => 'not applicable'
+        'none'                  => 'none',
+        'na'                    => 'not applicable',
+
+        'both'                  => 'both',
+        'yes'                   => 'yes',
+        'no'                    => 'no',
+
+        'query'                 => 'search'
 
     );
