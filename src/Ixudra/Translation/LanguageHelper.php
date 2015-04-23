@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Lang;
 
 class LanguageHelper {
 
-    public function get($message, $attributes = array(), $package = '')
+    public function get($message, $package = '', $attributes = array())
     {
         if( Lang::has( $message ) ) {
             return Lang::get($message, $attributes);

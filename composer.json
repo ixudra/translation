@@ -1,7 +1,7 @@
 {
     "name": "ixudra/translation",
     "description": "Custom PHP translation library for the Laravel 5 framework - developed by Ixudra",
-    "version": "5.0.0",
+    "version": "5.1.0",
     "keywords": ["Ixudra", "Laravel", "Translation"],
     "homepage": "http://ixudra.be",
     "license": "MIT",
