@@ -1,7 +1,7 @@
 ixudra/translation
 =====================
 
-Custom PHP translation library for the Laravel 5 framework - developed by Ixudra.
+Custom PHP translation library for the Laravel 5 framework - developed by [Ixudra](http://ixudra.be).
 
 This package can be used by anyone at any given time, but keep in mind that it is optimized for my personal custom workflow. It may not suit your project perfectly and modifications may be in order.
 
@@ -113,13 +113,13 @@ For example, see the following values in the `lang/admin.php` file that you can 
 ```php
 
     <?php
-    
+
         return array(
-    
+
             'menu.title.index'                  => '##models.:model.plural##',
             'menu.title.new'                    => 'New ##models.:model.singular##',
             'menu.title.edit'                   => 'Edit ##models.:model.singular##',
-    
+
         );
      
 ```
@@ -144,5 +144,22 @@ When this method gets called, the package will:
 The result of this interaction will be (by default): `New user`.
 
 You can include as many recursion identifiers as you want in one translation value. It is important to note however that the recursion is currently limited to one level. This feature will be added in the near future.
+
+
+
+
+## Publishing the language files
+
+The package has several language files that contain translations that can be used in your code. These translations can be used out of the box, but can also be modified if they don't match your needs. In order to modify these, you will have to publish the config file using artisan:
+
+```php
+
+    // Publish all resources from all packages
+    php artisan vendor:publish
+
+    // Publish only the resources of the package
+    php artisan vendor:publish --provider="Ixudra\\Translation\\TranslationServiceProvider"
+
+```
 
 That's all there is to it! Have fun!
