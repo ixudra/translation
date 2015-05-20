@@ -85,7 +85,7 @@ class TranslationService {
         }
 
         $matches = array();
-        preg_match_all('/##([a-zA-Z\.]*)##/', $translation, $matches);
+        preg_match_all('/##([a-zA-Z\_\.]*)##/', $translation, $matches);
 
         $results = array();
         foreach( $matches[1] as $match ) {
