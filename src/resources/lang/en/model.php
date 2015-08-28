@@ -11,6 +11,10 @@
         'delete.success'                    => 'The :model has been deleted successfully.',
         'delete.error'                      => 'Something went wrong while deleting the :model.',
 
+        'approve.success'                   => 'The :model has been approved successfully.',
+
+        'reject.success'                    => 'The :model has been rejected successfully.',
+
         'error.notFound'                    => 'This :model cannot be found in the database.',
 
     );

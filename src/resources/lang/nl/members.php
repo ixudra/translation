@@ -13,6 +13,8 @@
         'width'                 => 'breedte',
         'height'                => 'hoogte',
         'size'                  => 'grootte',
+        'language'              => 'language',
+        'phone'                 => 'telefoonnummer',
 
         // User members
         'first_name'            => 'voornaam',

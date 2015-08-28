@@ -2,20 +2,20 @@
 
     return array(
 
-        'new'                   => 'new',
-        'edit'                  => 'edit',
+        'new'                   => 'nouveau',
+        'edit'                  => 'changer',
         'delete'                => 'delete',
         'submit'                => 'submit',
         'cancel'                => 'cancel',
         'clear'                 => 'clear',
-        'select'                => 'select',
-        'download'              => 'download',
-        'search'                => 'search',
-        'next'                  => 'next',
+        'select'                => 'selecter',
+        'download'              => 'téléchargez',
+        'search'                => 'chercher',
+        'next'                  => 'avancer',
         'extra'                 => 'extra',
         'preview'               => 'preview',
-        'email'                 => 'email',
-        'sign'                  => 'sign',
+        'email'                 => 'envoyer par mail',
+        'sign'                  => 'signer',
 
         'actions'               => 'actions',
         'none'                  => 'none',

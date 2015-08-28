@@ -13,6 +13,8 @@
         'width'                 => 'width',
         'height'                => 'height',
         'size'                  => 'size',
+        'language'              => 'language',
+        'phone'                 => 'phone number',
 
         // User members
         'first_name'            => 'first name',
