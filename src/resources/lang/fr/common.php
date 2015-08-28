@@ -4,27 +4,27 @@
 
         'new'                   => 'nouveau',
         'edit'                  => 'changer',
-        'delete'                => 'delete',
-        'submit'                => 'submit',
-        'cancel'                => 'cancel',
-        'clear'                 => 'clear',
+        'delete'                => 'effacer',
+        'submit'                => 'enverrer',
+        'cancel'                => 'annuler',
+        'clear'                 => 'rayer',
         'select'                => 'selecter',
         'download'              => 'téléchargez',
         'search'                => 'chercher',
         'next'                  => 'avancer',
         'extra'                 => 'extra',
-        'preview'               => 'preview',
+        'preview'               => 'ver aperçu',
         'email'                 => 'envoyer par mail',
         'sign'                  => 'signer',
 
         'actions'               => 'actions',
-        'none'                  => 'none',
-        'na'                    => 'not applicable',
+        'none'                  => 'aucun',
+        'na'                    => 'pas applicable',
 
-        'both'                  => 'both',
-        'yes'                   => 'yes',
-        'no'                    => 'no',
+        'both'                  => 'les deux',
+        'yes'                   => 'oui',
+        'no'                    => 'non',
 
-        'query'                 => 'search'
+        'query'                 => 'chercher'
 
     );
