@@ -15,9 +15,7 @@ class TranslationServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        $this->app['IxdTranslation'] = $this->app->singleton(
-            function($app)
-            {
+        $this->app->singleton('IxdTranslation', function () {
                 return new TranslationService( new LanguageHelper() );
             }
         );
