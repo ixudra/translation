@@ -10,7 +10,7 @@ class TranslationServiceProvider extends ServiceProvider {
 
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__ .'/../../resources/lang', 'translation');
+        $this->loadTranslationsFrom(__DIR__ .'/resources/lang', 'translation');
     }
 
     public function register()
