@@ -28,7 +28,5 @@
         "psr-4": {
             "Ixudra\\Translation\\": "src/"
         }
-    },
-
-    "minimum-stability": "stable"
+    }
 }
