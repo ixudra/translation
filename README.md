@@ -37,12 +37,12 @@ Add the service provider to your app.php file
 
 ```php
 
-    providers     => array(
+    'providers'       => array(
 
         //...
-        'Ixudra\Translation\TranslationServiceProvider',
+        Ixudra\Translation\TranslationServiceProvider::class,
 
-    )
+    ),
 
 ```
 
@@ -50,12 +50,12 @@ Add the facade to your app.php file
 
 ```php
 
-    facades     => array(
+    'facades'       => array(
 
         //...
-        'Translate'       => 'Ixudra\Translation\Facades\Translation',
+        'Translate'       => Ixudra\Translation\Facades\Translation::class,
 
-    )
+    ),
 
 ```
 
@@ -68,7 +68,7 @@ Once included, the package can easily be used in any Laravel application. In ord
 
 ```php
 
-    Translate::message('your.key.goes.here')
+    Translate::message('your.key.goes.here');
 
 ```
 
@@ -78,7 +78,7 @@ The package also supports parameters that can be passed on to the translator, as
 
 ```php
 
-    Translate::message('your.key.goes.here', array('foo' => 'bar'))
+    Translate::message('your.key.goes.here', array('foo' => 'bar'));
 
 ```
 
@@ -90,7 +90,7 @@ Since translation messages are commonly used for models, this package provides a
 
 ```php
 
-    Translate::model('user.create.success')
+    Translate::model('user.create.success');
 
 ```
 
@@ -128,7 +128,7 @@ These values can be translated using the `recursive` method, passing the in `mod
 
 ```php
 
-    Translate::recursive('admin.menu.title.new', array('model' => 'user'))
+    Translate::recursive('admin.menu.title.new', array('model' => 'user'));
 
 ```
 
