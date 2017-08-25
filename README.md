@@ -1,6 +1,11 @@
 ixudra/translation
 =====================
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ixudra/translation.svg?style=flat-square)](https://packagist.org/packages/ixudra/translation)
+[![license](https://img.shields.io/github/license/ixudra/translation.svg)]()
+[![StyleCI](https://styleci.io/repos/27114640/shield)](https://styleci.io/repos/27114640)
+[![Total Downloads](https://img.shields.io/packagist/dt/ixudra/translation.svg?style=flat-square)](https://packagist.org/packages/ixudra/translation)
+
 Custom PHP translation library for the Laravel 5 framework - developed by [Ixudra](http://ixudra.be).
 
 This package can be used by anyone at any given time, but keep in mind that it is optimized for my personal custom workflow. It may not suit your project perfectly and modifications may be in order.
