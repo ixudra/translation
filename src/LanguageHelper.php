@@ -5,32 +5,32 @@ use Illuminate\Support\Facades\Lang;
 
 class LanguageHelper {
 
-    public function get($message, $package = '', $attributes = array())
+    public function get($message, $package = '', $attributes = array(), $locale = null)
     {
-        if( Lang::has( $message ) ) {
-            return Lang::get($message, $attributes);
+        if( Lang::has( $message, $locale ) ) {
+            return Lang::get($message, $attributes, $locale);
         }
 
-        if( $package != '' && Lang::has( $package .'::'. $message ) ) {
-            return Lang::get($package .'::'. $message, $attributes);
+        if( $package != '' && Lang::has( $package .'::'. $message, $locale ) ) {
+            return Lang::get($package .'::'. $message, $attributes, $locale);
         }
 
-        if( Lang::has( 'translation::'. $message ) ) {
-            return Lang::get( 'translation::'. $message, $attributes );
+        if( Lang::has( 'translation::'. $message, $locale ) ) {
+            return Lang::get( 'translation::'. $message, $attributes, $locale );
         }
 
         return $message;
     }
 
-    public function has($message, $package = '')
+    public function has($message, $package = '', $locale = null)
     {
-        $found = Lang::has( $message );
+        $found = Lang::has( $message, $locale );
 
         if( $package != '' ) {
-            $found = $found || Lang::has( $package .'::'. $message );
+            $found = $found || Lang::has( $package .'::'. $message, $locale );
         }
 
-        return  $found || Lang::has( 'translation::'. $message );
+        return $found || Lang::has( 'translation::'. $message, $locale );
     }
 
 }
