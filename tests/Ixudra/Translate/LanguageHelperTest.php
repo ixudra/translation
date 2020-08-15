@@ -2,13 +2,14 @@
 
 
 use Illuminate\Support\Facades\Lang;
+use PHPUnit\Framework\TestCase;
 
-class LanguageHelperTest extends \PHPUnit_Framework_TestCase {
+class LanguageHelperTest extends TestCase {
 
     protected $languageHelper;
 
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

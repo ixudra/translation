@@ -2,8 +2,9 @@
 
 
 use Illuminate\Support\Facades\Lang;
+use PHPUnit\Framework\TestCase;
 
-class TranslationServiceTest extends \PHPUnit_Framework_TestCase {
+class TranslationServiceTest extends TestCase {
 
     /**
      * @covers TranslationService::message()
