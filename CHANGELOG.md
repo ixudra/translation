@@ -2,6 +2,10 @@
 
 All Notable changes to `ixudra/translation` will be documented in this file
 
+## 5.5.0 2020-08-15
+### Added
+- Laravel 7 support
+
 ## 5.4.0 - 2019-10-15
 ### Updated
 - Updated for Laravel 6
